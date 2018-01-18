@@ -1,0 +1,43 @@
+{
+  "name": "vh-jobs",
+  "version": "1.0.0",
+  "description": "Sample project for Vanhack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.common.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fpaguiar/vh-jobs.git"
+  },
+  "keywords": [
+    "javascript",
+    "react",
+    "sass"
+  ],
+  "author": "Felipe Aguiar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fpaguiar/vh-jobs/issues"
+  },
+  "homepage": "https://github.com/fpaguiar/vh-jobs#readme",
+  "dependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.10.0",
+    "webpack-merge": "^4.1.1",
+    "webpack-war-plugin": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.15.0",
+    "eslint-plugin-react": "^7.5.1",
+    "webpack-dev-server": "^2.11.0"
+  }
+}
