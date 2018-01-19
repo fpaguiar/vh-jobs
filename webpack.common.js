@@ -13,12 +13,32 @@ const config = {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'dist')
 	},
+	resolve: {
+		alias: {
+			Assets: path.resolve(__dirname, 'src/assets')
+		}
+	},
 	module: {
 		loaders: [
 			{
 				test: /\.jsx$/,
 				exclude: '/node_modules',
 				loader: 'babel-loader'
+			},
+			{
+				test: /\.scss$/,
+				exclude: '/node_modules',
+				loaders: [
+					'style-loader',
+					'css-loader',
+					'sass-loader',
+					'resolve-url-loader',
+					'sass-loader?sourceMap'
+				]
+			},
+			{
+				test: /\.(woff2?|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
+				loader: 'file-loader?name=[name].[ext]',
 			}
 		]
 	},
