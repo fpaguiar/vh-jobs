@@ -3,10 +3,12 @@ import {render} from 'react-dom';
 
 import 'Assets/sass/main.scss';
 
+import Navbar from 'Components/Navbar/Navbar.jsx';
+
 const App = () => (
 	<div>
+		<Navbar />
 		<p>It worked.</p>
-		<a className="waves-effect waves-light btn">button</a>
 	</div>
 );
 
