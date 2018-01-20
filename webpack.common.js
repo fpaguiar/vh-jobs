@@ -20,7 +20,8 @@ const config = {
 		],
 		alias: {
 			Assets: path.resolve(__dirname, 'src/assets'),
-			Components: path.resolve(__dirname, 'src/app/components')
+			Components: path.resolve(__dirname, 'src/app/components'),
+			Util: path.resolve(__dirname, 'src/app/util')
 		}
 	},
 	module: {
