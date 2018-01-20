@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class JobCard extends React.Component {
 	constructor(props) {
@@ -7,19 +8,23 @@ class JobCard extends React.Component {
 
 	render() {
 		return (
-			<div className="card grey darken-1">
-				<div className="card-content white-text">
-					<span className="card-title">Card Title</span>
-					<div className="chip">React</div>
-					<div className="chip">ES2016</div>
-					<div className="chip">CSS3</div>
+			<div className="card">
+				<div className="card-content">
+					<span className="card-title">{this.props.title}</span>
+					<span>{this.props.location}</span>
 				</div>
 				<div className="card-action">
-					<a href="#">Link 1</a>
+					{this.props.skills.map((skill, i) => (<div key={i} className="chip">{skill}</div>))}
 				</div>
 			</div>
 		);
 	}
 }
+
+JobCard.propTypes = {
+	title: PropTypes.string.isRequired,
+	skills: PropTypes.array.isRequired,
+	location: PropTypes.string.isRequired
+};
 
 export default JobCard;

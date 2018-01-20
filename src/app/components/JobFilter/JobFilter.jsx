@@ -13,15 +13,15 @@ class JobFilter extends React.Component {
 		return (
 			<ul className="collapsible" data-collapsible="expandable">
 				<li>
-					<div className="collapsible-header grey white-text"><i className="material-icons">place</i>Location</div>
+					<div className="collapsible-header"><i className="material-icons">place</i>Location</div>
 					<div className="collapsible-body"><LocationFilter /></div>
 				</li>
 				<li>
-					<div className="collapsible-header grey white-text"><i className="material-icons">date_range</i>Publish Date</div>
+					<div className="collapsible-header"><i className="material-icons">date_range</i>Publish Date</div>
 					<div className="collapsible-body"><DateFilter /></div>
 				</li>
 				<li>
-					<div className="collapsible-header grey white-text"><i className="material-icons">work</i>Category</div>
+					<div className="collapsible-header"><i className="material-icons">work</i>Category</div>
 					<div className="collapsible-body"><CategoryFilter /></div>
 				</li>
 			</ul>
