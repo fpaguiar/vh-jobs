@@ -11,7 +11,7 @@ class JobCard extends React.Component {
 			<div className="card">
 				<div className="card-content">
 					<span className="card-title">{this.props.title}</span>
-					<span>{this.props.location}</span>
+					<span>{this.props.location}</span>	
 				</div>
 				<div className="card-action">
 					{this.props.skills.map((skill, i) => (<div key={i} className="chip">{skill}</div>))}

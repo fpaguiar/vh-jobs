@@ -36,7 +36,7 @@ class JobBoard extends React.Component {
 			<div className="row">
 				{this.jobs.map((job, i) => {
 					return (
-						<div key={i} className="col l4">
+						<div key={i} className="col s12 l6">
 							<JobCard title={job.title} skills={job.skills} location={`${job.city}, ${job.country}`} />
 						</div>
 					);

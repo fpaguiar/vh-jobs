@@ -1,17 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import 'Assets/sass/main.scss';
 
 //Components
 import Navbar from 'Components/Navbar/Navbar';
-import JobBoard from 'Components/JobBoard/JobBoard';
-import JobFilter from 'Components/JobFilter/JobFilter';
+import JobsView from 'Views/Jobs.view';
+import LandingPageView from 'Views/LandingPage.view';
 
 const App = () => (
 	<div>
 		<Navbar />
-		<div className="container">
+		<BrowserRouter>
+			<div>
+				<Route exact path="/" component={LandingPageView} />
+				<Route exact path="/jobs" component={JobsView} />
+			</div>
+			{/* <Route exact path="/jobs/:jobId" component={} /> */}
+		</BrowserRouter>
+		{/* <div className="container">
 			<div className="row" />
 			<div className="row">
 				<div className="col s12 l3">
@@ -37,7 +45,7 @@ const App = () => (
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> */}
 	</div>
 );
 
