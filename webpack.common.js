@@ -44,7 +44,7 @@ const config = {
 				]
 			},
 			{
-				test: /\.(woff2?|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
+				test: /\.(woff2?|ttf|svg|eot|png|jpg|jpeg)(\?v=\d+\.\d+\.\d+)?$/,
 				loader: 'file-loader?name=[name].[ext]',
 			}
 		]
