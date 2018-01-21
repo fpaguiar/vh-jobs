@@ -1,1 +1,6 @@
-@import '~materialize-css/sass/materialize.scss'
+@import '~materialize-css/sass/materialize.scss';
+
+@font-face {
+  font-family: 'Nunito';
+  src:  url('./../fonts/Nunito-Regular.ttf')
+}
