@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import './Navbar.scss';
+
 const Navbar = () => (
-	<nav className="teal lighten-1">
+	<nav className="teal orange accent-3">
 		<div className="nav-wrapper">
-			<div href="#" className="brand-logo">
-				<Link to="/">VH-Jobs</Link>
+			<div href="#" className="logo brand-logo">
+				<Link to="/">GetMeHired</Link>
 			</div>
 			<ul id="nav-mobile" className="right hide-on-med-and-down">
 				<li><Link to="/jobs">Jobs</Link></li>

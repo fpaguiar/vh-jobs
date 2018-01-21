@@ -6,9 +6,10 @@ import 'Assets/sass/main.scss';
 
 //Components
 import Navbar from 'Components/Navbar/Navbar';
-import JobsView from 'Views/Jobs.view';
-import LandingPageView from 'Views/LandingPage.view';
-import AboutView from 'Views/About.view';
+import JobsView from 'Views/Jobs/Jobs.view';
+import DetailsView from 'Views/Details/Details.view';
+import LandingPageView from 'Views/LandingPage/LandingPage.view';
+import AboutView from 'Views/About/About.view';
 
 const App = () => (
 	<div>
@@ -16,10 +17,10 @@ const App = () => (
 			<div>
 				<Navbar />
 				<Route exact path="/" component={LandingPageView} />
-				<Route exact path="/jobs" component={JobsView} />
 				<Route exact path="/about" component={AboutView} />
+				<Route exact path="/jobs" component={JobsView} />
+				<Route exact path="/jobs/:jobId" component={DetailsView} />
 			</div>
-			{/* <Route exact path="/jobs/:jobId" component={} /> */}
 		</BrowserRouter>
 		
 	</div>

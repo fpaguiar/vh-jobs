@@ -8,7 +8,7 @@ class JobCard extends React.Component {
 
 	render() {
 		return (
-			<div className="card">
+			<div className="card hoverable">
 				<div className="card-content">
 					<span className="card-title">{this.props.title}</span>
 					<span>{this.props.location}</span>	

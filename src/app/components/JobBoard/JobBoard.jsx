@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import JobCard from 'Components/JobCard/JobCard';
 
@@ -37,7 +38,9 @@ class JobBoard extends React.Component {
 				{this.jobs.map((job, i) => {
 					return (
 						<div key={i} className="col s12 l6">
-							<JobCard title={job.title} skills={job.skills} location={`${job.city}, ${job.country}`} />
+							<Link to="/jobs/12">
+								<JobCard title={job.title} skills={job.skills} location={`${job.city}, ${job.country}`} />
+							</Link>
 						</div>
 					);
 				})}
