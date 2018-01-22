@@ -2,30 +2,29 @@ import React from 'react';
 import JobBoard from 'Components/JobBoard/JobBoard';
 import JobFilter from 'Components/JobFilter/JobFilter';
 
+import './Jobs.scss';
+
 const JobsView = () => (
 	<div className="container">
 		<div className="row" />
 		<div className="row">
-			<div className="col s12 l3">
-				<JobFilter />
-			</div>
-			<div className="col l9">
-				<div className="row">
-					<form action="">
-						<div className="input-field col s6">
-							<i className="material-icons prefix">search</i>
-							<input id="icon_prefix" type="text" className="validate" />
-							<label htmlFor="icon_prefix">Job Title, Keyword etc.</label>
+			<div className="col s12">
+				<div className="row valign-wrapper">
+					<div className="col s10 l11">
+						<div className="input-field">
+							<form action="">
+								<i className="material-icons prefix">search</i>
+								<input id="icon_prefix" type="search" className="validate" />
+								<label htmlFor="icon_prefix">Title, Skills etc.</label>
+							</form>
 						</div>
-						<div className="input-field col s6">
-							<i className="material-icons prefix">place</i>
-							<input id="icon_telephone" type="tel" className="validate" />
-							<label htmlFor="icon_telephone">Location</label>
-						</div>
-					</form>
+					</div>
+					<div className="col s2 l1">
+						<a className="btn-floating waves-effect waves-light"><i className="material-icons">filter_list</i></a>
+					</div>
 				</div>
 				<div className="row">
-					<JobBoard />
+					<JobBoard cardsPerRow={2}/>
 				</div>
 			</div>
 		</div>

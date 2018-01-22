@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import JobCard from 'Components/JobCard/JobCard';
@@ -28,6 +29,13 @@ class JobBoard extends React.Component {
 				city: 'Vancouver',
 				country: 'Canada',
 				publishDate: new Date(2018, 1, 3)
+			},
+			{
+				title: 'Frontend Developer',
+				skills: ['ES2015', 'SASS', 'Angular'],
+				city: 'Dublin',
+				country: 'Ireland',
+				publishDate: new Date(2018, 1, 20)
 			}
 		];
 	}
@@ -37,7 +45,7 @@ class JobBoard extends React.Component {
 			<div className="row">
 				{this.jobs.map((job, i) => {
 					return (
-						<div key={i} className="col s12 l6">
+						<div key={i} className={`col s12 l${Math.trunc(12/this.props.cardsPerRow)}`}>
 							<Link to="/jobs/12">
 								<JobCard title={job.title} skills={job.skills} location={`${job.city}, ${job.country}`} />
 							</Link>
@@ -48,5 +56,9 @@ class JobBoard extends React.Component {
 		);
 	}
 }
+
+JobBoard.propTypes = {
+	cardsPerRow: PropTypes.number.isRequired
+};
 
 export default JobBoard;

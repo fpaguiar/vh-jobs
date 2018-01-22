@@ -6,7 +6,7 @@ import Logo from 'Components/Logo/Logo';
 import SocialIcons from './components/SocialIcons/SocialIcons';
 
 const Footer = () => (
-	<footer className="page-footer blue-grey darken-1">
+	<footer className="page-footer blue-grey darken-4">
 		<div className="container">
 			<div className="row">
 				<div className="col l6 s12">

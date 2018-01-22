@@ -4,16 +4,25 @@
 	margin-bottom: 30px;
 }
 
-.timeline::before {
-	content: '';
-	background-color: gray;
-	position: absolute;
-	height: 19%;
+.timeline {
+	height: 100%;
+	position: relative;
+	display: table;
+	border-left: 1px dashed #333;
 	width: 1px;
+	transform: translate(35px);
 }
 
 .step__left-side, .step__right-side {
 	flex: 6;
+}
+
+.step__left-side {
+	text-align: right;
+}
+
+.step__right-side {
+	text-align: left;
 }
 
 .step__center {
@@ -22,7 +31,7 @@
 
 .step__circle {
 	flex: 1;
-	border: 2px solid black;
+	border: 5px solid #333;
 	border-radius: 50%;
 	height: 70px;
 	width: 70px;

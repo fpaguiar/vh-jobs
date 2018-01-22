@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import JobBoard from 'Components/JobBoard/JobBoard';
+
 import './LandingPage.scss';
 
 import bgAmsterdam from 'Assets/images/background_amsterdam.jpeg';
@@ -21,8 +23,8 @@ class LandingPageView extends React.Component {
 		return (
 			<div>
 				<div className="parallax-container overlay-content">
-					<div style={{position: 'relative'}} className="white-text">
-						<h2>Your next job is here.</h2>
+					<div style={{position: 'relative'}} className="white-text center-align">
+						<h2 style={{textShadow: '3px 1px 2px #333'}}>Your next job is here.</h2>
 					</div>
 					<Link to="/jobs" className="waves-effect waves-light btn">Browse Jobs</Link>
 					<div className="parallax">
@@ -31,8 +33,7 @@ class LandingPageView extends React.Component {
 				</div>
 				<div className="section container white">
 					<h2 className="header">Latest Jobs</h2>
-					<p>Ut et eros eget turpis ornare sodales eget eget dui. Etiam posuere quam quis est euismod, ac luctus erat cursus. Proin mattis quam vel ante rutrum finibus. Nam vitae nibh nec lacus fermentum elementum. Donec ac dolor et turpis posuere accumsan. Nam pretium nunc at convallis pellentesque. Integer leo leo, eleifend ut viverra ut, efficitur non augue. Maecenas pellentesque ac leo vitae condimentum. Maecenas non erat lectus.</p>
-					<p>Maecenas ac justo efficitur, consectetur est a, convallis tortor. Suspendisse ut malesuada odio, eget mattis erat. Nullam metus mauris, posuere quis mauris non, consectetur ornare nisl. Quisque aliquet, ipsum convallis commodo cursus, magna dui tempus felis, in interdum ligula nulla elementum sem. Proin feugiat, diam ac varius elementum, leo ligula aliquet ex, et hendrerit odio dolor consectetur turpis. Donec sit amet interdum nunc, non iaculis velit. Curabitur ultricies pulvinar nunc at pulvinar. Maecenas viverra vehicula arcu, eget porta justo tristique in. Fusce in tempus urna, sed interdum libero. Aenean pretium massa sit amet lacinia tempus.</p>
+					<JobBoard cardsPerRow={4}/>
 				</div>
 				<div className="parallax-container">
 					<div className="parallax"><img src={bgAmsterdam}/></div>

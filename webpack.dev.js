@@ -9,8 +9,7 @@ const config = {
 				target: 'http://youcanhom.eastus.cloudapp.azure.com',	
 				secure: false,
 			}
-		},
-		port: 3000
+		}
 	},
 	devtool: 'source-map',
 };
