@@ -1,0 +1,37 @@
+.step {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 30px;
+}
+
+.timeline::before {
+	content: '';
+	background-color: gray;
+	position: absolute;
+	height: 19%;
+	width: 1px;
+}
+
+.step__left-side, .step__right-side {
+	flex: 6;
+}
+
+.step__center {
+	z-index: 1;
+}
+
+.step__circle {
+	flex: 1;
+	border: 2px solid black;
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #FFFFFF;
+
+	& span {
+		font-size: 2.5rem;
+	}
+}

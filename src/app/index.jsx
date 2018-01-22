@@ -6,6 +6,9 @@ import 'Assets/sass/main.scss';
 
 //Components
 import Navbar from 'Components/Navbar/Navbar';
+import Footer from 'Components/Footer/Footer';
+
+//Views
 import JobsView from 'Views/Jobs/Jobs.view';
 import DetailsView from 'Views/Details/Details.view';
 import LandingPageView from 'Views/LandingPage/LandingPage.view';
@@ -20,6 +23,7 @@ const App = () => (
 				<Route exact path="/about" component={AboutView} />
 				<Route exact path="/jobs" component={JobsView} />
 				<Route exact path="/jobs/:jobId" component={DetailsView} />
+				<Footer />
 			</div>
 		</BrowserRouter>
 		

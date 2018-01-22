@@ -5,6 +5,7 @@ import './LandingPage.scss';
 import bgAmsterdam from 'Assets/images/background_amsterdam.jpeg';
 import bgBerlin from 'Assets/images/background_berlin.jpg';
 import bgVancouver from 'Assets/images/background_vancouver.jpg';
+import Steps from './Steps/Steps';
 
 class LandingPageView extends React.Component {
 	constructor(props) {
@@ -18,12 +19,13 @@ class LandingPageView extends React.Component {
 	render() {
 		return (
 			<div>
-				<div className="parallax-container">
-					<div className="parallax overlay-content">
+				<div className="parallax-container overlay-content">
+					<div style={{position: 'relative'}} className="white-text">
+						<h2>Your next job is here.</h2>
+					</div>
+					<a className="waves-effect waves-light btn">Browse Jobs</a>
+					<div className="parallax">
 						<img src={bgBerlin}/>
-						<div style={{position: 'absolute'}} className="white-text">
-							<h2>You new job is here.</h2>
-						</div>
 					</div>
 				</div>
 				<div className="section container white">
@@ -36,8 +38,7 @@ class LandingPageView extends React.Component {
 				</div>
 				<div className="section container white">
 					<h2 className="header">How it Works</h2>
-					<p>Praesent varius lectus ut metus porta feugiat. Aenean pulvinar elit eget massa suscipit, suscipit laoreet est lacinia. Sed commodo eu nibh vel ultricies. Praesent mattis sem ac eros scelerisque viverra. Morbi tempus maximus magna, eget lobortis lectus rutrum id. Suspendisse diam neque, eleifend et consectetur id, pretium sed tellus. Aliquam vitae sapien id diam iaculis cursus.</p>
-					<p>Morbi ligula quam, faucibus sit amet mattis in, posuere sit amet arcu. Nam vestibulum mi erat, sed euismod elit tempor non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec tincidunt lectus sit amet dui auctor fermentum. Nam at ipsum at mauris dictum aliquet non at nulla. Aliquam ultricies mauris eu condimentum commodo. Pellentesque a ultricies lacus. Etiam fermentum pulvinar mi, condimentum consectetur lorem pellentesque id. Donec nisl tellus, placerat eget sem sed, porta ultricies libero. Ut dolor metus, interdum at rhoncus id, mattis eget urna. Ut laoreet nisi eu justo fringilla, vitae dictum ante finibus. Proin a tortor consectetur, blandit ligula commodo, pulvinar quam. Nam ultrices tempus aliquam. Donec eu venenatis ipsum, in sagittis arcu.</p>
+					<Steps />
 				</div>
 				<div className="parallax-container">
 					<div className="parallax"><img src={bgVancouver}/></div>
