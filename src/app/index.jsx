@@ -19,10 +19,12 @@ const App = () => (
 		<BrowserRouter>
 			<div>
 				<Navbar />
-				<Route exact path="/" component={LandingPageView} />
-				<Route exact path="/about" component={AboutView} />
-				<Route exact path="/jobs" component={JobsView} />
-				<Route exact path="/jobs/:jobId" component={DetailsView} />
+				<main>
+					<Route exact path="/" component={LandingPageView} />
+					<Route exact path="/about" component={AboutView} />
+					<Route exact path="/jobs" component={JobsView} />
+					<Route exact path="/jobs/:jobId" component={DetailsView} />
+				</main>
 				<Footer />
 			</div>
 		</BrowserRouter>
