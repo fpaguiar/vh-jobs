@@ -1,60 +1,84 @@
 {
   "jobs": [
     {
+      "id": 1,
       "title": "Backend Developer",
       "skills": ["Java", "REST", "MySQL"],
       "city": "Berlin",
       "country": "Germany",
-      "publishDate": "2017-11-13"
+      "company": "Icecorps"
     },
     {
+      "id": 2,
       "title": "Full Stack Developer",
       "skills": ["Python", "REST", "PostgreSQL", "Django"],
       "city": "Berlin",
       "country": "Germany",
-      "publishDate": "2017-07-13"
+      "company": "Greenetworks"
     },
     {
+      "id": 3,
       "title": "Senior Backend Developer",
       "skills": ["Python", "Microservices", "Oracle", "Django", "AWS"],
       "city": "Hamburg",
       "country": "Germany",
-      "publishDate": "2017-11-30"
+      "company": "Tigerworth"
     },
     {
+      "id": 4,
       "title": "DevOps Engineer",
       "skills": ["Kafka", "AWS", "CI", "CD"],
-      "city": "Melbourne",
-      "country": "Australia",
-      "publishDate": "2017-12-03"
+      "city": "Victoria",
+      "country": "Canada",
+      "company": "Goldstones"
     },
     {
+      "id": 5,
       "title": "UI/UX Developer",
       "skills": ["Photoshop", "Javascript", "CSS3"],
       "city": "Vancouver",
       "country": "Canada",
-      "publishDate": "2017-12-23"
+      "company": "Squidway"
     },
     {
+      "id": 6,
       "title": "Senior React Developer",
       "skills": ["React", "ES2015", "Redux", "HTML5", "CSS3", "Yarn", "Git"],
       "city": "Kitchener",
       "country": "Canada",
-      "publishDate": "2017-12-10"
+      "company": "Sail Industries"
     },
     {
+      "id": 7,
       "title": "Frontend Developer",
       "skills": ["ES2015", "SASS", "Angular"],
       "city": "Dublin",
       "country": "Ireland",
-      "publishDate": "2018-01-05"
+      "company": "Petal Entertainment"
     },
     {
-      "title": "Web Developer",
+      "id": 8,
+      "title": "Senior Web Developer",
       "skills": ["PHP", "Laravel", "GraphQL", "SASS", "Angular"],
       "city": "Cork",
       "country": "Ireland",
-      "publishDate": "2018-01-22"
+      "company": "Petal Entertainment"
+    },
+    {
+      "id": 9,
+      "title": "Software Engineer",
+      "skills": ["C++", "TCP/IP", "Microservices", "MongoDB", "Azure", "Chef"],
+      "city": "Utretch",
+      "country": "Netherlands",
+      "company": "Alpinetechs"
+    },
+    {
+      "id": 10,
+      "title": "Senior Backend Developer",
+      "skills": ["Java", "Scala", "JPA", "MongoDB", "AWS", "Microservices", "SOA", "REST", "Spring Boot", "Spring MVC"],
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "company": "Spherehut"
     }
   ]
 }
