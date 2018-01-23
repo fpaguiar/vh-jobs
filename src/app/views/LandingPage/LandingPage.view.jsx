@@ -24,7 +24,7 @@ class LandingPageView extends React.Component {
 			<div>
 				<div className="parallax-container overlay-content">
 					<div style={{position: 'relative'}} className="white-text center-align">
-						<h2 style={{textShadow: '3px 1px 2px #333'}}>Your next job is here.</h2>
+						<h2>Your next job is here.</h2>
 					</div>
 					<Link to="/jobs" className="waves-effect waves-light btn">Browse Jobs</Link>
 					<div className="parallax">

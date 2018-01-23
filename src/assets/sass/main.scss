@@ -4,9 +4,14 @@
   font-family: 'Nunito';
   src:  url('./../fonts/Nunito-Regular.ttf')
 }
+@font-face {
+  font-family: 'Noto';
+  src:  url('./../fonts/NotoSans-Regular.ttf')
+}
 
 html, body {
   height: 100%;
+  font-family: Noto;
 }
 
 body {
