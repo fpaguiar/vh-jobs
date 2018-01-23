@@ -9,22 +9,25 @@ class JobFilter extends React.Component {
 		super(props);
 	}
 
+	componentDidMount() {
+		$('.button-collapse').sideNav({ edge: 'right' });
+		$('.collapsible').collapsible();
+	}
+
 	render() {
 		return (
-			<ul className="collapsible" data-collapsible="expandable">
-				<li>
-					<div className="collapsible-header"><i className="material-icons">place</i>Location</div>
-					<div className="collapsible-body"><LocationFilter /></div>
-				</li>
-				<li>
-					<div className="collapsible-header"><i className="material-icons">date_range</i>Publish Date</div>
-					<div className="collapsible-body"><DateFilter /></div>
-				</li>
-				<li>
-					<div className="collapsible-header"><i className="material-icons">work</i>Category</div>
-					<div className="collapsible-body"><CategoryFilter /></div>
-				</li>
-			</ul>
+			<div id="slide-out" className="side-nav">
+				<ul className="collapsible" data-collapsible="expandable">
+					<li>
+						<div className="collapsible-header active"><i className="material-icons">place</i>Location</div>
+						<div className="collapsible-body"><LocationFilter /></div>
+					</li>
+					<li>
+						<div className="collapsible-header active"><i className="material-icons">work</i>Category</div>
+						<div className="collapsible-body"><CategoryFilter /></div>
+					</li>
+				</ul>
+			</div>
 		);
 	}
 }

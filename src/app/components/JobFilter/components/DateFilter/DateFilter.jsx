@@ -15,7 +15,7 @@ class DateFilter extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="container">
 				<p>
 					<input type="radio" className="with-gap" id="cbDate7d" name="publishDate" value={7} onChange={this.handleRadioChange}/>
 					<label htmlFor="cbDate7d">7 Days Ago</label>

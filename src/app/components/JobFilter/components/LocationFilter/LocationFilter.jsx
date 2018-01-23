@@ -18,7 +18,7 @@ class LocationFilter extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="container">
 				<p>
 					<input type="checkbox" className="filled-in" id="cbLocationCa" checked={this.state.cbLocationCa} onChange={this.handleCheckBoxChange}/>
 					<label htmlFor="cbLocationCa">Canada</label>
