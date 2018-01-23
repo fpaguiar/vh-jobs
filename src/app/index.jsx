@@ -17,9 +17,6 @@ import JobsView from 'Views/Jobs/Jobs.view';
 import DetailsView from 'Views/Details/Details.view';
 import LandingPageView from 'Views/LandingPage/LandingPage.view';
 import AboutView from 'Views/About/About.view';
-// remove later
-import axios from 'axios';
-window.axios = axios;
 
 const store = createStore(reducers, {}, applyMiddleware(promise));
 
