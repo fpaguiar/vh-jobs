@@ -1,6 +1,6 @@
-export function handleCheckBoxChange({ target }) {
-	this.setState({
-		[target.id]: target.checked
+export function handleCheckBoxState(component, target) {
+	component.setState({
+		[target.name]: target.checked
 	});
 }
 

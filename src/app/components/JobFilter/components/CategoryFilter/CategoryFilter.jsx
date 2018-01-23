@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { handleCheckBoxChange } from 'Util/formUtils';
+import { handleCheckBoxState } from 'Util/formUtils';
 
 class CategoryFilter extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.handleCheckBoxChange = handleCheckBoxChange.bind(this);
+		this.handleCheckBoxChange = handleCheckBoxState.bind(this);
 
 		this.state = {
 			cbCategorySe: false,

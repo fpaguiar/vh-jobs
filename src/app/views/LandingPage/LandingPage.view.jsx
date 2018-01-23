@@ -33,7 +33,7 @@ class LandingPageView extends React.Component {
 				</div>
 				<div className="section container">
 					<h2 className="header">Latest Jobs</h2>
-					<JobBoard cardsPerRow={4}/>
+					<JobBoard cardsPerRow={4} limit={4}/>
 				</div>
 				<div className="parallax-container">
 					<div className="parallax"><img src={bgAmsterdam}/></div>

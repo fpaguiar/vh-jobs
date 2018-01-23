@@ -40,6 +40,14 @@ class JobsView extends React.Component {
 						<div className="row">
 							<JobBoard cardsPerRow={2}/>
 						</div>
+						<div className="row">
+							<div className="col s12">
+								<ul className="pagination center-align">
+									<li className="disabled"><a href="#!"><i className="material-icons">chevron_left</i></a></li>
+									<li className="waves-effect"><a href="#!"><i className="material-icons">chevron_right</i></a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

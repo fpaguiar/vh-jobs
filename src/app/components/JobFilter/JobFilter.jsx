@@ -1,6 +1,7 @@
 import React from 'react';
 
 import LocationFilter from './components/LocationFilter/LocationFilter';
+import DateFilter from './components/DateFilter/DateFilter';
 import CategoryFilter from './components/CategoryFilter/CategoryFilter';
 
 class JobFilter extends React.Component {
