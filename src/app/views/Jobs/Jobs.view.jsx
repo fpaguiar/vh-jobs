@@ -27,7 +27,7 @@ class JobsView extends React.Component {
 									<form action="">
 										<i className="material-icons prefix">search</i>
 										<input id="icon_prefix" type="search" className="validate" />
-										<label htmlFor="icon_prefix">Title, Skills etc.</label>
+										<label htmlFor="icon_prefix">Title, keywords etc.</label>
 									</form>
 								</div>
 							</div>
@@ -39,14 +39,6 @@ class JobsView extends React.Component {
 						</div>
 						<div className="row">
 							<JobBoard cardsPerRow={2}/>
-						</div>
-						<div className="row">
-							<div className="col s12">
-								<ul className="pagination center-align">
-									<li className="disabled"><a href="#!"><i className="material-icons">chevron_left</i></a></li>
-									<li className="waves-effect"><a href="#!"><i className="material-icons">chevron_right</i></a></li>
-								</ul>
-							</div>
 						</div>
 					</div>
 				</div>

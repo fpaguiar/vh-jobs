@@ -4,81 +4,101 @@
       "id": 1,
       "title": "Backend Developer",
       "skills": ["Java", "REST", "MySQL"],
+      "benefits": ["Relocation Package", "Adaptation Support", "Visa Services", "Flight Tickets","Rental deposit coverage"],
       "city": "Berlin",
       "country": "Germany",
-      "company": "Icecorps"
+      "company": "Icecorps",
+      "category": "Software_Engineering"
     },
     {
       "id": 2,
       "title": "Full Stack Developer",
-      "skills": ["Python", "REST", "PostgreSQL", "Django"],
+      "skills": ["C#", ".NET", "REST", "PostgreSQL"],
+      "benefits": ["Relocation Package", "Adaptation Support", "Visa Services","Rental deposit coverage"],
       "city": "Berlin",
       "country": "Germany",
-      "company": "Greenetworks"
+      "company": "Greenetworks",
+      "category": "Software_Engineering"
     },
     {
       "id": 3,
-      "title": "Senior Backend Developer",
-      "skills": ["Python", "Microservices", "Oracle", "Django", "AWS"],
+      "title": "Backend Developer",
+      "skills": ["Python", "Django", "AWS", "Microservices", "Oracle"],
+      "benefits": ["Visa Services", "Flight Tickets","Rental deposit coverage"],
       "city": "Hamburg",
       "country": "Germany",
-      "company": "Tigerworth"
+      "company": "Tigerworth",
+      "category": "Software_Engineering"
     },
     {
       "id": 4,
       "title": "DevOps Engineer",
       "skills": ["Kafka", "AWS", "CI", "CD"],
+      "benefits": ["Relocation Package", "Adaptation Support", "Visa Services", "Flight Tickets","Rental deposit coverage"],
       "city": "Victoria",
       "country": "Canada",
-      "company": "Goldstones"
+      "company": "Goldstones",
+      "category": "DevOps"
     },
     {
       "id": 5,
-      "title": "UI/UX Developer",
-      "skills": ["Photoshop", "Javascript", "CSS3"],
+      "title": "Data Scientist",
+      "skills": ["Tableau", "R", "Python", "MS Excel"],
+      "benefits": ["Visa Services", "Flight Tickets"],
       "city": "Vancouver",
       "country": "Canada",
-      "company": "Squidway"
+      "company": "Squidway",
+      "category": "Data_Engineering"
     },
     {
       "id": 6,
       "title": "Senior React Developer",
       "skills": ["React", "ES2015", "Redux", "HTML5", "CSS3", "Yarn", "Git"],
+      "benefits": ["Relocation Package", "Visa Services", "Flight Tickets","Rental deposit coverage"],
       "city": "Kitchener",
       "country": "Canada",
-      "company": "Sail Industries"
+      "company": "Sail Industries",
+      "category": "Software_Engineering"
     },
     {
       "id": 7,
       "title": "Frontend Developer",
       "skills": ["ES2015", "SASS", "Angular"],
+      "benefits": ["Relocation Package", "Adaptation Support", "Visa Services"],
       "city": "Dublin",
       "country": "Ireland",
-      "company": "Petal Entertainment"
+      "company": "Petal Entertainment",
+      "category": "Software_Engineering"
     },
     {
       "id": 8,
       "title": "Senior Web Developer",
       "skills": ["PHP", "Laravel", "GraphQL", "SASS", "Angular"],
+      "benefits": ["Relocation Package", "Adaptation Support", "Visa Services", "Flight Tickets","Rental deposit coverage"],
       "city": "Cork",
       "country": "Ireland",
-      "company": "Petal Entertainment"
+      "company": "Petal Entertainment",
+      "category": "Software_Engineering"
     },
     {
       "id": 9,
-      "title": "Software Engineer",
+      "title": "Software Engineer in Test",
       "skills": ["C++", "TCP/IP", "Microservices", "MongoDB", "Azure", "Chef"],
+      "benefits": ["Relocation Package", "Adaptation Support", "Visa Services", "Flight Tickets","Rental deposit coverage"],
       "city": "Utretch",
       "country": "Netherlands",
-      "company": "Alpinetechs"
+      "company": "Alpinetechs",
+      "category": "Software_Engineering"
     },
     {
       "id": 10,
       "title": "Senior Backend Developer",
       "skills": ["Java", "Scala", "JPA", "MongoDB", "AWS", "Microservices", "SOA", "REST", "Spring Boot", "Spring MVC"],
+      "benefits": ["Relocation Package", "Adaptation Support", "Visa Services", "Flight Tickets"],
       "city": "Amsterdam",
       "country": "Netherlands",
-      "company": "Spherehut"
+      "company": "Spherehut",
+      "category": "Software_Engineering"
     }
   ]
 }

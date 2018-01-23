@@ -1,14 +1,11 @@
 import React, { Component} from 'react';
-import { connect } from 'react-redux';
-
-import * as actions from '../../../../actions';
+import PropTypes from 'prop-types';
 
 class LocationFilter extends Component {
 	constructor(props) {
 		super(props);
 
 		this.handleCheckBoxChange = this.handleCheckBoxChange.bind(this);
-		this.handleCheckBoxState = this.handleCheckBoxState.bind(this);
 
 		this.state = {
 			cbLocationCa: false,
@@ -17,22 +14,17 @@ class LocationFilter extends Component {
 			cbLocationDe: false
 		};
 
-		this.countries = [];
+		this.countries = {};
 	}
 
 	handleCheckBoxChange({ target }) {
 		this.handleCheckBoxState(target);
 
-		this.countries.push(target.value);
-		this.dispatchGetJobs(this.countries);
+		this.props.cbOnCheck(target);
 	}
 	
 	handleCheckBoxState(target) {
 		this.setState({[target.id]: target.checked});
-	}
-
-	dispatchGetJobs(countries) {
-		this.props.fetchJobByCountry(countries);
 	}
 
 	render() {
@@ -59,4 +51,8 @@ class LocationFilter extends Component {
 	}
 }
 
-export default connect(null, actions)(LocationFilter);
+LocationFilter.propTypes = {
+	cbOnCheck: PropTypes.func
+};
+
+export default LocationFilter;
