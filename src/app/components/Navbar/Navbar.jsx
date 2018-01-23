@@ -10,9 +10,8 @@ const Navbar = () => (
 				<div href="#" className="brand-logo" style={{margin: '0 1rem'}}>
 					<Logo />
 				</div>
-				<ul id="nav-mobile" className="right hide-on-med-and-down">
+				<ul id="nav-mobile" className="right">
 					<li><Link to="/jobs">Jobs</Link></li>
-					<li><Link to="/about">About</Link></li>
 				</ul>
 			</div>
 		</nav>
