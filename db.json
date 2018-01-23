@@ -1,9 +1,60 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "jobs": [
+    {
+      "title": "Backend Developer",
+      "skills": ["Java", "REST", "MySQL"],
+      "city": "Berlin",
+      "country": "Germany",
+      "publishDate": "2017-11-13"
+    },
+    {
+      "title": "Full Stack Developer",
+      "skills": ["Python", "REST", "PostgreSQL", "Django"],
+      "city": "Berlin",
+      "country": "Germany",
+      "publishDate": "2017-07-13"
+    },
+    {
+      "title": "Senior Backend Developer",
+      "skills": ["Python", "Microservices", "Oracle", "Django", "AWS"],
+      "city": "Hamburg",
+      "country": "Germany",
+      "publishDate": "2017-11-30"
+    },
+    {
+      "title": "DevOps Engineer",
+      "skills": ["Kafka", "AWS", "CI", "CD"],
+      "city": "Melbourne",
+      "country": "Australia",
+      "publishDate": "2017-12-03"
+    },
+    {
+      "title": "UI/UX Developer",
+      "skills": ["Photoshop", "Javascript", "CSS3"],
+      "city": "Vancouver",
+      "country": "Canada",
+      "publishDate": "2017-12-23"
+    },
+    {
+      "title": "Senior React Developer",
+      "skills": ["React", "ES2015", "Redux", "HTML5", "CSS3", "Yarn", "Git"],
+      "city": "Kitchener",
+      "country": "Canada",
+      "publishDate": "2017-12-10"
+    },
+    {
+      "title": "Frontend Developer",
+      "skills": ["ES2015", "SASS", "Angular"],
+      "city": "Dublin",
+      "country": "Ireland",
+      "publishDate": "2018-01-05"
+    },
+    {
+      "title": "Web Developer",
+      "skills": ["PHP", "Laravel", "GraphQL", "SASS", "Angular"],
+      "city": "Cork",
+      "country": "Ireland",
+      "publishDate": "2018-01-22"
+    }
+  ]
 }
