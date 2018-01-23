@@ -18,7 +18,7 @@ class CategoryFilter extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="container">
 				<p>
 					<input type="checkbox" className="filled-in" id="cbCategorySe" checked={this.state.cbCategorySe} onChange={this.handleCheckBoxChange}/>
 					<label htmlFor="cbCategorySe">Software Engineering</label>

@@ -16,7 +16,9 @@ class JobsView extends React.Component {
 	render() {
 		return (
 			<div className="container">
-				<div className="row" />
+				<div className="row">
+					<JobFilter />
+				</div>
 				<div className="row">
 					<div className="col s12">
 						<div className="row valign-wrapper">
@@ -30,7 +32,7 @@ class JobsView extends React.Component {
 								</div>
 							</div>
 							<div className="col s2 l1">
-								<a className="btn-floating waves-effect waves-light tooltipped" data-position="right" data-tooltip="Filter">
+								<a className="btn-floating waves-effect waves-light tooltipped button-collapse" data-position="right" data-tooltip="Filter" data-activates="slide-out">
 									<i className="material-icons">filter_list</i>
 								</a>
 							</div>
