@@ -19,26 +19,26 @@ class DetailsView extends React.Component {
 	render() {
 		return (
 			<div className="container">
-				<div className="row">
-					<div className="col s12">
+				<div className="row valign-wrapper">
+					<div className="col s8">
 						<h2>{this.props.job.title}</h2>
+					</div>
+					<div className="col s4 right-align">
+						<a className="waves-effect waves-light btn">Apply</a>
 					</div>
 				</div>
 				<div className="row">
-					<div className="col s6 l3 grey-text">
+					<div className="col s6 blue-grey-text darken-4">
 						<p className="valign-wrapper">
 							<i className="material-icons">place</i>
 							<span>{`${this.props.job.city}, ${this.props.job.country}`}</span>
 						</p>
 					</div>
-					<div className="col s6 l3 grey-text">
+					<div className="col s6 blue-grey-text darken-4">
 						<p className="valign-wrapper">
 							<i className="material-icons">business</i>
 							<span>{this.props.job.company}</span>
 						</p>
-					</div>
-					<div className="col s6 l6 right-align">
-						<a className="waves-effect waves-light btn">Apply</a>
 					</div>
 				</div>
 				<hr/>

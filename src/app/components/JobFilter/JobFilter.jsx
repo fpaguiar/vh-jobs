@@ -40,6 +40,7 @@ class JobFilter extends React.Component {
 
 	componentDidMount() {
 		$('.button-collapse').sideNav({ edge: 'right' });
+		$('#sidenav-overlay').remove();
 		$('.collapsible').collapsible();
 	}
 
