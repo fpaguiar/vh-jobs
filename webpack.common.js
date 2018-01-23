@@ -23,7 +23,9 @@ const config = {
 			Assets: path.resolve(__dirname, 'src/assets'),
 			Components: path.resolve(__dirname, 'src/app/components'),
 			Views: path.resolve(__dirname, 'src/app/views'),
-			Util: path.resolve(__dirname, 'src/app/util')
+			Util: path.resolve(__dirname, 'src/app/util'),
+			Actions: path.resolve(__dirname, 'src/app/actions'),
+			Reducers: path.resolve(__dirname, 'src/app/reducers')
 		}
 	},
 	module: {
