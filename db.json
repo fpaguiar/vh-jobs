@@ -99,6 +99,26 @@
       "country": "Netherlands",
       "company": "Spherehut",
       "category": "Software_Engineering"
+    },
+    {
+      "id": 11,
+      "title": "Full Stack Developer",
+      "skills": ["Java", "Scala", "Clojure", "AWS", "Jenkins", "REST", "Angular 4"],
+      "benefits": ["Relocation Package", "Adaptation Support", "Visa Services", "Flight Tickets"],
+      "city": "Calgary",
+      "country": "Canada",
+      "company": "Spherehut",
+      "category": "Software_Engineering"
+    },
+    {
+      "id": 12,
+      "title": "UI/UX Developer",
+      "skills": ["Photoshop", "Sketch", "Javascript", "HTML5", "CSS3", "A/B Test"],
+      "benefits": ["Relocation Package", "Adaptation Support", "Visa Services"],
+      "city": "Victoria",
+      "country": "Canada",
+      "company": "Alpinetechs",
+      "category": "Software_Engineering"
     }
   ]
 }
