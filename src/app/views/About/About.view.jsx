@@ -8,9 +8,10 @@ const AboutView = () => (
 				<a className="waves-effect waves-teal btn-flat" target="_blank" rel="noopener noreferrer" href="https://github.com/fpaguiar/vh-jobs"><i className="material-icons left">open_in_new</i>Github</a>
 			</div>
 		</div>
+		<hr/>
 		<div className="row">
-			<h2>Technologies Used</h2>
 			<div className="col s12">
+				<h2>Technologies Used</h2>
 				<ul>
 					<li className="valign-wrapper">
 						<i className="material-icons">chevron_right</i>
@@ -59,6 +60,7 @@ const AboutView = () => (
 				</ul>
 			</div>
 		</div>
+		<hr/>
 		<div className="row">
 			<div className="col s12">
 				<h2>Wireframes</h2>
