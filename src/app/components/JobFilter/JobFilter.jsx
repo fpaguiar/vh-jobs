@@ -49,11 +49,11 @@ class JobFilter extends React.Component {
 			<div id="slide-out" className="side-nav">
 				<ul className="collapsible" data-collapsible="expandable">
 					<li>
-						<div className="collapsible-header active"><i className="material-icons">place</i>Location</div>
+						<div className="collapsible-header active valign-wrapper"><i className="material-icons">place</i><span>Location</span></div>
 						<div className="collapsible-body"><LocationFilter cbOnCheck={this.handleCountryChange}/></div>
 					</li>
 					<li>
-						<div className="collapsible-header active"><i className="material-icons">work</i>Category</div>
+						<div className="collapsible-header active valign-wrapper"><i className="material-icons">work</i><span>Category</span></div>
 						<div className="collapsible-body"><CategoryFilter cbOnCheck={this.handleCategoryChange}/></div>
 					</li>
 				</ul>
