@@ -16,8 +16,9 @@ const Footer = () => (
 				<div className="col l4 offset-l2 s12">
 					<h5 className="white-text">Links</h5>
 					<ul>
-						<li><Link to="/jobs">Jobs</Link></li>
+						<li><Link to="/">Home</Link></li>
 						<li><Link to="/about">About</Link></li>
+						<li><Link to="/jobs">Jobs</Link></li>
 					</ul>
 				</div>
 			</div>
