@@ -11,6 +11,7 @@ import 'Assets/sass/main.scss';
 //Components
 import Navbar from 'Components/Navbar/Navbar';
 import Footer from 'Components/Footer/Footer';
+import ScrollToTop from 'Components/ScrollToTop/ScrollToTop';
 
 //Views
 import JobsView from 'Views/Jobs/Jobs.view';
@@ -23,8 +24,8 @@ const store = createStore(reducers, {}, applyMiddleware(promise));
 const App = () => (
 	<div>
 		<Provider store={store}>
-			<BrowserRouter>
-				<div>
+			<BrowserRouter >
+				<ScrollToTop>
 					<Navbar />
 					<main>
 						<Route exact path="/" component={LandingPageView} />
@@ -33,7 +34,7 @@ const App = () => (
 						<Route exact path="/jobs/:jobId" component={DetailsView} />
 					</main>
 					<Footer />
-				</div>
+				</ScrollToTop>
 			</BrowserRouter>
 		</Provider>
 	</div>
