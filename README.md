@@ -14,6 +14,9 @@ The category chosen was for Front End: Job Platform
 2. Run Application:
 
 	`npm run dev`
+3. Access the application at:
+
+	`http://localhost:8080`
 
 ## Technologies Used
 - Javascript (ES2015)
