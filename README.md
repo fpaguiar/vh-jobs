@@ -3,7 +3,7 @@ This is a project created for the Vanhack Accelerator Program 2018.
 The category chosen was for Front End: Job Platform
 
 ## Requirements
-- Node.js (LTS or higher);
+- Node.js (LTS 10);
 - A Browser.
 
 ## How to run
