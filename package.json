@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/fpaguiar/vh-jobs#readme",
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "babel-loader": "^7.1.5",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
